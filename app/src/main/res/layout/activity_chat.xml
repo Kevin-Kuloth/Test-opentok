@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/audiocalllay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calltoollay"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Small"
+            android:layout_centerInParent="true"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/imgpro_a"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/callerimage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/imgpro_b"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/callerdetaillay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/callername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Victoria Carlson"
+            android:textSize="24sp"
+            android:textColor="#ececec"/>
+
+        <TextView
+            android:id="@+id/callerdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Female Sanfransisco"
+            android:textSize="16sp"
+            android:textColor="#818181"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/publisherviewlay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/publisherview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/publishername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="bottom|right"
+                android:padding="10dp"
+                android:text="Hannah"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:id="@+id/callerviews2"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/callerview2"/>
+
+            <TextView
+                android:id="@+id/callerviewtxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="bottom|right"
+                android:padding="10dp"
+                android:text="Hannah"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/callersviewlay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/publisherviewlay"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/callerviews0"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/callerview0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:gravity="bottom|right"
+                android:padding="10dp"
+                android:text="Victoria"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/callerviews1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:visibility="gone"
+           >
+
+            <RelativeLayout
+                android:id="@+id/callerview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:gravity="bottom|right"
+                android:padding="10dp"
+                android:text="JeremyDavis"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calltoollay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisherviewlay"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/calltime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calling"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:background="@drawable/call_elipse_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/off_audio"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:id="@+id/audiotoggle"
+            />
+
+        <ImageView
+            android:id="@+id/chatbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_chat"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/off_recording"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:id="@+id/videotoggle"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_info"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/endcall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_end"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_mute"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

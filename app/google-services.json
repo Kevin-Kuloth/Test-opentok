@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1067598166861",
+    "firebase_url": "https://tokboxtest-e7dc5.firebaseio.com",
+    "project_id": "tokboxtest-e7dc5",
+    "storage_bucket": "tokboxtest-e7dc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067598166861:android:619f98ebf15b318f",
+        "android_client_info": {
+          "package_name": "com.tokbox.android.demo.learningopentok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067598166861-q64nf9fopq0aq6r7k72ajkooq51c11k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokbox.android.demo.learningopentok",
+            "certificate_hash": "B8C0CC11880F7A0FA6D656414103AF606854E995"
+          }
+        },
+        {
+          "client_id": "1067598166861-73avr8tlo3odb89cq5fn6up5admrec5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA01yZbd2XLletSVYBVD_kSBIqGoG0fbsI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067598166861-73avr8tlo3odb89cq5fn6up5admrec5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
